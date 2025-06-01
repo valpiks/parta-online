@@ -23,8 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 	document.querySelectorAll('.expand-btn').forEach(btn => {
 		btn.addEventListener('click', function () {
+			// Изменено с .review-card на .review__content
 			const reviewText =
-				this.closest('.review-card').querySelector('.review-text').textContent;
+				this.closest('.review__content').querySelector(
+					'.review__text'
+				).textContent;
 			const modal = document.getElementById('reviewModal');
 
 			modal.querySelector('.full-review-text').textContent = reviewText;
