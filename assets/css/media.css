@@ -1,0 +1,235 @@
+@media (min-width: 1400px) {
+	:root {
+		--mw: 1380px;
+	}
+	.container {
+		max-width: var(--mw);
+		margin-inline: auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.serv-cont {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.serv-cont {
+		grid-template-columns: 1fr;
+	}
+	.card {
+		width: 100%;
+	}
+	.about-advantages {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.modal-content {
+		width: 95%;
+		padding: 30px 20px;
+	}
+
+	.review-card {
+		padding: 20px;
+	}
+
+	.expand-btn {
+		right: 15px;
+		bottom: 15px;
+		width: 35px;
+		height: 35px;
+		font-size: 18px;
+	}
+}
+
+/* Добавьте это в конец файла media.css */
+
+@media (max-width: 1200px) {
+	body {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.main {
+		grid-template-columns: 1fr;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.main h1 {
+		text-align: center;
+	}
+
+	.book {
+		width: 100%;
+		height: auto;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.about__advantages {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 100px;
+	}
+
+	.about__individual {
+		grid-template-columns: 1fr;
+		gap: 50px;
+		text-align: center;
+		img {
+			justify-self: center;
+		}
+	}
+
+	.services__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.service-card__content {
+		width: 100%;
+	}
+
+	.reviews__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.map-section {
+		height: auto;
+		padding: 20px 0;
+	}
+
+	.map-section__container {
+		width: 100%;
+		height: 400px;
+	}
+
+	.centered-text {
+		width: 100%;
+		max-width: 500px;
+		margin: 20px auto;
+	}
+
+	.contacts__form {
+		position: static;
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+		padding: 30px;
+	}
+
+	.info {
+		padding: 30px;
+		height: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.about__advantages {
+		grid-template-columns: 1fr;
+	}
+
+	.services__container {
+		grid-template-columns: 1fr;
+	}
+
+	.reviews__container {
+		grid-template-columns: 1fr;
+	}
+
+	.service-card__content {
+		height: auto;
+		padding: 30px;
+	}
+
+	.map-section__container {
+		height: 300px;
+	}
+
+	.contact-with {
+		margin: 100px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.about__individual {
+		font-size: 30px;
+	}
+
+	.map-section__container {
+		height: 250px;
+	}
+
+	.contacts__form button {
+		width: 100%;
+	}
+}
+
+/* Добавьте это в файл media.css */
+
+@media (max-width: 992px) {
+	.navbar__container.container {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0 20px;
+	}
+
+	.navbar__logo {
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+		width: 100%;
+		display: none; /* Скрываем по умолчанию */
+	}
+
+	.navbar ul.active {
+		display: flex; /* Показываем при активации */
+	}
+
+	.navbar ul li {
+		margin: 5px 0;
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.contact {
+		border: none;
+		padding-left: 0;
+		border-radius: 0;
+	}
+
+	.navbar__user {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		gap: 30px;
+	}
+
+	/* Добавляем кнопку меню для мобильных */
+	.navbar__menu-toggle {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.navbar__menu-toggle ion-icon {
+		color: #333;
+	}
+}
+
+@media (min-width: 993px) {
+	.navbar ul {
+		display: flex !important; /* Всегда показываем на десктопе */
+	}
+
+	.navbar__menu-toggle {
+		display: none !important; /* Скрываем кнопку меню на десктопе */
+	}
+}
