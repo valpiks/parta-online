@@ -155,7 +155,37 @@
 
 @media (max-width: 480px) {
 	.about__individual {
-		font-size: 30px;
+		font-size: 20px;
+		img {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	.home-text h1,
+	p {
+		font-size: 100%;
+	}
+
+	.about {
+		h1 {
+			font-size: 40px;
+		}
+	}
+
+	.contacts__form {
+		textarea {
+			width: 100%;
+		}
+
+		input {
+			width: 100%;
+		}
+	}
+
+	.centered-text h1 {
+		font-size: 20px;
 	}
 
 	.map-section__container {
